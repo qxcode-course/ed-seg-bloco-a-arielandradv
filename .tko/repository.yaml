@@ -10,22 +10,23 @@ sources:
   target: https://github.com/qxcodeed/arcade.git
   type: git
   writeable: false
-  cache_timestamp: '2026-03-14 23:22:11'
+  cache_timestamp: '2026-03-15 18:19:54'
   quests: null
   tasks: null
 expanded:
-- ed@recursão
-- ed@backtracking
+- ed@vetor
 - ed@árvore
-- ed@busca-em-profundidade
+- ed@revisão
 - ed@lista
-- ed@análise
+- ed@busca-em-profundidade
 - ed@busca-em-largura
 - ed@main-quest
-- ed@vetor
-- ed@revisão
+- ed@análise
+- ed@recursão
+- ed@backtracking
 tasks:
   ed@pintando: '{self:1, rate:100, study:20, friend:nao, debug:1}'
+  ed@mumia: '{self:1, rate:100, study:15, friend:nao}'
 flags:
   painel: 0
   quests: 0
@@ -34,4 +35,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@pintando
+selected: ed@mumia

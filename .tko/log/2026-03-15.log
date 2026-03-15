@@ -3,3 +3,19 @@
 2026-03-15 00:13:23, EXEC, v:1, k:ed@pintando, mode:FULL, rate:100, size:18
 2026-03-15 00:14:02, MOVE, v:1, k:ed@pintando, mode:BACK
 2026-03-15 00:15:20, SELF, v:1, k:ed@pintando, self:1, rate:100, study:20, friend:nao, debug:1
+2026-03-15 00:53:15, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-15 00:54:03, EXEC, v:1, k:ed@pintando, mode:FREE, size:18
+2026-03-15 00:54:39, MOVE, v:1, k:ed@pintando, mode:BACK
+2026-03-15 00:56:45, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-15 18:20:17, MOVE, v:1, k:ed@mumia, mode:DOWN
+2026-03-15 18:20:29, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-15 18:20:35, MOVE, v:1, k:ed@pintando, mode:BACK
+2026-03-15 18:20:39, MOVE, v:1, k:ed@fuga, mode:DOWN
+2026-03-15 18:20:46, MOVE, v:1, k:ed@mumia, mode:PICK
+2026-03-15 18:21:25, MOVE, v:1, k:ed@mumia, mode:BACK
+2026-03-15 18:21:35, MOVE, v:1, k:ed@mumia, mode:PICK
+2026-03-15 18:45:03, EXEC, v:1, k:ed@mumia, mode:FULL, rate:0, size:24
+2026-03-15 18:45:34, EXEC, v:1, k:ed@mumia, mode:FULL, rate:0, size:24
+2026-03-15 18:45:51, EXEC, v:1, k:ed@mumia, mode:FULL, rate:100, size:24
+2026-03-15 18:46:04, MOVE, v:1, k:ed@mumia, mode:BACK
+2026-03-15 18:47:26, SELF, v:1, k:ed@mumia, self:1, rate:100, study:15, friend:nao

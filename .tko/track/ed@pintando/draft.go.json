@@ -7,7 +7,12 @@
         },
         {
             "label": "2026-03-15_00-13-23",
-            "content": "package main\nimport (\n    \"fmt\"\n    \"math\"\n)\n\nfunc main() {\n    \n    var l1, l2, l3 float64\n    \n    fmt.Scan(&l1)\n    fmt.Scan(&l2)\n    fmt.Scan(&l3)\n\n    p:= (l1+l2+l3)/2\n    resultado:= math.Sqrt(p* (p-l1) * (p-l2) * (p-l3))\n    fmt.Printf(\"%.2f\\n\", resultado)\n}\n",
+            "content": "@@ -158,26 +158,18 @@\n := (\n- \n l1\n- + l2 + l3 ) / \n++l2+l3)/\n 2%0A  \n@@ -197,24 +197,21 @@\n rt(p\n- \n * (p\n- - \n+-\n l1) * (p\n  - l\n@@ -210,19 +210,17 @@\n * (p\n- - \n+-\n l2) * (p\n  - l\n@@ -219,11 +219,9 @@\n * (p\n- - \n+-\n l3))\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-15_00-54-03",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"math\"\n)\n\nfunc main() {\n    \n    var l1, l2, l3 float64\n    \n    fmt.Scan(&l1)\n    fmt.Scan(&l2)\n    fmt.Scan(&l3)\n\n    p:= ( l1 + l2 + l3 ) / 2\n    resultado:= math.Sqrt(p * (p - l1) * (p - l2) * (p - l3))\n    fmt.Printf(\"%.2f\\n\", resultado)\n}\n",
             "lines": "18"
         }
     ]

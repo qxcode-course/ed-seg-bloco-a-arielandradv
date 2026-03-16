@@ -9,10 +9,8 @@ func AbsInt(n int) int {
 }
 
 func main() {
-    H := 0
-    P := 0
-    F := 0
-    D := 0
+    H, P, D, F:= 0
+    
 
     fmt.Scan(&H)
     fmt.Scan(&P)

@@ -1,27 +1,23 @@
 package main
 import "fmt"
 
-func AbsInt(n int) int {
-    if n < 0 {
-        return -n
-    }
-    return n
-}
-
 func main() {
-    H, P, D, F:= 0
+    var H, P, F, D int
+    fmt.Scan(&H, &P, &F, &D)
     
+    var distanciaH, distanciaP int
 
-    fmt.Scan(&H)
-    fmt.Scan(&P)
-    fmt.Scan(&F)
-    fmt.Scan(&D)
+    if D == -1 {
+        distanciaH = ((F - H) + 16) % 16
+        distanciaP = ((F - P) + 16) % 16
+    } else {
+        distanciaH = ((H - F) + 16) % 16
+        distanciaP = ((P - F) + 16) % 16
+    }
 
-    distanciaH := 0
-    distanciaP := 0
-
-    distanciaH = AbsInt(H - F)
-    distanciaP = AbsInt(P - F)
-
-    
+    if distanciaH < distanciaP {
+        fmt.Println("S")
+    } else {
+        fmt.Println("N")
+    }
 }

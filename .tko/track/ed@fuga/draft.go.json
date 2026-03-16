@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_18-55-02",
+            "content": "@@ -160,16 +160,17 @@\n , &D, &F\n+,\n )%0A    %0A \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-16_18-55-20",
+            "content": "@@ -20,16 +20,96 @@\n  %22fmt%22%0A%0A\n+func AbsInt(n int) int %7B%0A    if n %3C 0 %7B%0A        return -n%0A    %7D%0A    return n%0A%7D%0A%0A\n func mai\n@@ -122,26 +122,22 @@\n     \n-var \n H, P, \n-F, D int\n+D, F:= 0\n %0A   \n@@ -159,13 +159,13 @@\n P, &\n-F, &D\n+D, &F\n )%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-16_18-57-20",
+            "content": "@@ -95,20 +95,16 @@\n    %0A    \n-var \n distanci\n@@ -118,19 +118,20 @@\n tanciaP \n-int\n+:= 0\n %0A%0A    if\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-16_18-58-29",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var H, P, F, D int\n    fmt.Scan(&H, &P, &F, &D)\n    \n    var distanciaH, distanciaP int\n\n    if D == -1 {\n        distanciaH = ((F - H) + 16) % 16\n        distanciaP = ((F - P) + 16) % 16\n    } else {\n        distanciaH = ((H - F) + 16) % 16\n        distanciaP = ((P - F) + 16) % 16\n    }\n\n    if distanciaH < distanciaP {\n        fmt.Println(\"S\")\n    } else {\n        fmt.Println(\"N\")\n    }\n}\n",
+            "lines": "23"
+        }
+    ]
+}

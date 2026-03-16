@@ -26,7 +26,7 @@ expanded:
 - ed@backtracking
 tasks:
   ed@pintando: '{self:1, rate:100, study:20, friend:nao, debug:1}'
-  ed@mumia: '{rate:100}'
+  ed@mumia: '{self:1, rate:100, study:15, friend:nao}'
 flags:
   painel: 0
   quests: 0

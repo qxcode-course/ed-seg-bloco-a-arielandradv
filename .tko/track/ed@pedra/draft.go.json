@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_16-11-37",
+            "content": "@@ -719,25 +719,23 @@\n   melhor\n-Diferenca\n+Jogador\n := 101%0A \n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-03-16_16-11-58",
+            "content": "@@ -234,36 +234,25 @@\n r i:= range \n-competidores\n+n\n  %7B%0A        f\n@@ -753,28 +753,17 @@\n = range \n-competidores\n+n\n  %7B%0A     \n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-03-16_16-13-43",
+            "content": "@@ -969,16 +969,17 @@\n Vencedor\n+:\n = i%0A    \n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-03-16_16-16-44",
+            "content": "@@ -863,17 +863,17 @@\n ferenca \n-%3C\n+%3E\n  melhorD\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-03-16_16-17-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    n := 0\n    fmt.Scan(&n)\n\n    type Competidor struct{\n        pedraA int\n        pedraB int\n        diferenca int\n        valido bool\n    }\n\n    competidores := make([]Competidor, n)\n\n    for i:= range competidores {\n        fmt.Scan(&competidores[i].pedraA, &competidores[i].pedraB)\n\n        if competidores[i].pedraA >= 10 && competidores[i].pedraB >= 10 {\n            competidores[i].valido = true\n\n            dif:= competidores[i].pedraA - competidores[i].pedraB\n            if dif < 0 {\n                dif = -dif\n            }\n            competidores[i].diferenca = dif\n        \n        } else {\n            competidores[i].valido = false\n        }\n    }\n\n    idVencedor:= -1\n    melhorDiferenca:= 101\n    for i:= range competidores {\n        if competidores[i].valido == true{\n            if competidores[i].diferenca < melhorDiferenca {\n                melhorDiferenca = competidores[i].diferenca\n                idVencedor= i\n            }\n        }\n    }\n\n    if idVencedor == -1{\n        fmt.Println(\"sem ganhador\")\n    } else {\n        fmt.Println(idVencedor)\n    }\n\n\n}",
+            "lines": "51"
+        }
+    ]
+}

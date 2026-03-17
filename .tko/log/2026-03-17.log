@@ -1,0 +1,11 @@
+2026-03-17 16:00:13, MOVE, v:1, k:ed@casais, mode:DOWN
+2026-03-17 16:00:17, MOVE, v:1, k:ed@casais, mode:PICK
+2026-03-17 16:00:18, EXEC, v:1, k:ed@casais, mode:FULL, rate:0, size:5
+2026-03-17 16:09:54, EXEC, v:1, k:ed@casais, mode:FULL, size:20, fail:COMP
+2026-03-17 16:10:26, EXEC, v:1, k:ed@casais, mode:FULL, size:21, fail:COMP
+2026-03-17 16:12:57, EXEC, v:1, k:ed@casais, mode:FULL, size:22, fail:COMP
+2026-03-17 16:15:36, EXEC, v:1, k:ed@casais, mode:FULL, size:22, fail:COMP
+2026-03-17 16:17:36, EXEC, v:1, k:ed@casais, mode:FULL, rate:100, size:22
+2026-03-17 16:17:40, EXEC, v:1, k:ed@casais, mode:FULL, rate:100
+2026-03-17 16:17:43, MOVE, v:1, k:ed@casais, mode:BACK
+2026-03-17 16:18:28, SELF, v:1, k:ed@casais, self:1, rate:100, study:18, guided:1, concept:1

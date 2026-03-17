@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_16-00-18",
+            "content": "@@ -41,360 +41,28 @@\n     \n-solteiros := make(map%5Bint%5Dint)%0A    qtd := 0%0A    fmt.Scan(&qtd)%0A    for range qtd %7B%0A        animal := 0%0A        fmt.Scan(&animal)%0A        qtd, existe := solteiros%5B-animal%5D%0A        if existe && qtd %3E 0%7B%0A            solteiros%5B-animal%5D = qtd -1%0A            pares += 1%0A        %7D else %7B%0A            solteiros%5Banimal%5D ++%0A        %7D%0A    %7D%0A    fmt.Println(pares)%0A\n+fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-17_16-09-54",
+            "content": "@@ -144,27 +144,8 @@\n = 0%0A\n-        pares := 0%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-17_16-10-26",
+            "content": "@@ -85,23 +85,8 @@\n = 0%0A\n-    pares := 0%0A\n     \n@@ -104,13 +104,8 @@\n td)%0A\n-    %0A\n     \n@@ -136,24 +136,43 @@\n animal := 0%0A\n+        pares := 0%0A\n         fmt.\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-17_16-12-57",
+            "content": "@@ -115,17 +115,21 @@\n n(&qtd)%0A\n+    \n %0A\n-\n     for \n@@ -194,17 +194,19 @@\n         \n-v\n+qtd\n , existe\n@@ -249,17 +249,19 @@\n iste && \n-v\n+qtd\n  %3E 0%7B%0A  \n@@ -295,9 +295,11 @@\n %5D = \n-v\n+qtd\n  -1%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-17_16-15-36",
+            "content": "@@ -128,28 +128,17 @@\n for \n-i := 0; i %3C qtd; i++\n+range qtd\n  %7B%0A \n@@ -307,17 +307,19 @@\n  pares +\n-+\n+= 1\n %0A       \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-17_16-17-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    solteiros := make(map[int]int)\n    qtd := 0\n    pares := 0\n    fmt.Scan(&qtd)\n\n    for i := 0; i < qtd; i++ {\n        animal := 0\n        fmt.Scan(&animal)\n        v, existe := solteiros[-animal]\n        if existe && v > 0{\n            solteiros[-animal] = v -1\n            pares ++\n        } else {\n            solteiros[animal] ++\n        }\n    }\n    fmt.Println(pares)\n\n}\n",
+            "lines": "22"
+        }
+    ]
+}

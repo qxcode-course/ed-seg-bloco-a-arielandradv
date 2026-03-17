@@ -9,3 +9,5 @@
 2026-03-17 16:17:40, EXEC, v:1, k:ed@casais, mode:FULL, rate:100
 2026-03-17 16:17:43, MOVE, v:1, k:ed@casais, mode:BACK
 2026-03-17 16:18:28, SELF, v:1, k:ed@casais, self:1, rate:100, study:18, guided:1, concept:1
+2026-03-17 16:41:13, MOVE, v:1, k:ed@gomos, mode:DOWN
+2026-03-17 16:41:19, MOVE, v:1, k:ed@gomos, mode:PICK

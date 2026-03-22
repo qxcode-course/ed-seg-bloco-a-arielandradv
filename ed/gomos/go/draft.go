@@ -1,18 +1,24 @@
-package main
+ package main
 import "fmt"
+
+type Gomo struct{
+   x int
+   y int
+}
+
 func main() {
-    qtd := 0
-    dir := 0
+    var qtd int
+    var dir string
     fmt.Scan(&qtd, &dir)
+
     cobra := make([]Gomo, qtd)
     for i := range cobra {
         fmt.Scan(&cobra[i].x, &cobra[i].y)
     }
-
-    fmt.Println(qtd, dir, cobra)
-    for i:= qtd -1; i > 0; i-- {
-        cobra[i] = cobra [i-1]
+    for i:= qtd -1; i > 0 ; i-- {
+      cobra[i] = cobra[i-1]
     }
+
      switch dir {
      case "L":
         cobra[0].x--
@@ -23,7 +29,8 @@ func main() {
      case "D":
         cobra[0].y++
      }
-     for_, gomo := range cobra {
-        fmt.Printf("%v %v\ngomo.x, gomo.y")
+
+     for _, gomo := range cobra {
+        fmt.Printf("%d %d\n", gomo.x, gomo.y)
      }
 }

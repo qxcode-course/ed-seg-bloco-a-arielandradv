@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-22_16-11-43",
+            "content": "@@ -1,9 +1,8 @@\n- \n package \n@@ -23,96 +23,47 @@\n mt%22%0A\n-%0Atype Gomo struct%7B%0A   x int%0A   y int%0A%7D%0A%0Afunc main() %7B%0A    var qtd int%0A    var dir string\n+func main() %7B%0A    qtd := 0%0A    dir := 0\n %0A   \n@@ -84,17 +84,16 @@\n , &dir)%0A\n-%0A\n     cobr\n@@ -190,16 +190,50 @@\n y)%0A    %7D\n+%0A%0A    fmt.Println(qtd, dir, cobra)\n %0A    for\n@@ -247,24 +247,23 @@\n d -1\n-:\n+;\n  i %3E 0\n- \n ; i-- %7B%0A\n     \n@@ -258,16 +258,18 @@\n ; i-- %7B%0A\n+  \n       co\n@@ -282,16 +282,17 @@\n  = cobra\n+ \n %5Bi-1%5D%0A  \n@@ -291,25 +291,24 @@\n %5Bi-1%5D%0A    %7D%0A\n-%0A\n      switch \n@@ -460,25 +460,24 @@\n .y++%0A     %7D%0A\n-%0A\n      for_, g\n@@ -522,17 +522,14 @@\n f(%22%25\n-d %25d\n+v %25v\n %5Cn\n-%22, \n gomo\n@@ -538,16 +538,17 @@\n , gomo.y\n+%22\n )%0A     %7D\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-22_16-43-39",
+            "content": "@@ -260,17 +260,17 @@\n = qtd -1\n-;\n+:\n  i %3E 0 ;\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-22_16-44-10",
+            "content": "@@ -489,17 +489,16 @@\n      for\n- \n _, gomo \n@@ -568,8 +568,9 @@\n      %7D%0A%7D\n+%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-22_16-51-58",
+            "content": " package main\nimport \"fmt\"\n\ntype Gomo struct{\n   x int\n   y int\n}\n\nfunc main() {\n    var qtd int\n    var dir string\n    fmt.Scan(&qtd, &dir)\n\n    cobra := make([]Gomo, qtd)\n    for i := range cobra {\n        fmt.Scan(&cobra[i].x, &cobra[i].y)\n    }\n    for i:= qtd -1; i > 0 ; i-- {\n      cobra[i] = cobra[i-1]\n    }\n\n     switch dir {\n     case \"L\":\n        cobra[0].x--\n     case \"R\":\n        cobra[0].x++\n     case \"U\":\n        cobra[0].y--\n     case \"D\":\n        cobra[0].y++\n     }\n\n     for _, gomo := range cobra {\n        fmt.Printf(\"%d %d\\n\", gomo.x, gomo.y)\n     }\n}",
+            "lines": "36"
+        }
+    ]
+}

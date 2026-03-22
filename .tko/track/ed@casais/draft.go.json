@@ -27,7 +27,12 @@
         },
         {
             "label": "2026-03-17_16-17-36",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    solteiros := make(map[int]int)\n    qtd := 0\n    pares := 0\n    fmt.Scan(&qtd)\n\n    for i := 0; i < qtd; i++ {\n        animal := 0\n        fmt.Scan(&animal)\n        v, existe := solteiros[-animal]\n        if existe && v > 0{\n            solteiros[-animal] = v -1\n            pares ++\n        } else {\n            solteiros[animal] ++\n        }\n    }\n    fmt.Println(pares)\n\n}\n",
+            "content": "@@ -409,15 +409,11 @@\n (pares)%0A\n-    \n %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-22_15-13-46",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    solteiros := make(map[int]int)\n    qtd := 0\n    pares := 0\n    fmt.Scan(&qtd)\n\n    for i := 0; i < qtd; i++ {\n        animal := 0\n        fmt.Scan(&animal)\n        v, existe := solteiros[-animal]\n        if existe && v > 0{\n            solteiros[-animal] = v -1\n            pares ++\n        } else {\n            solteiros[animal] ++\n        }\n    }\n    fmt.Println(pares)\n    \n}\n",
             "lines": "22"
         }
     ]

@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-22_21-11-06",
+            "content": "@@ -833,17 +833,16 @@\n   for i \n-:\n = 1; i %3C\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-03-22_21-11-24",
+            "content": "@@ -1186,24 +1186,8 @@\n    %7D\n-%0A    fmt.Print()\n %0A%0A%7D%0A\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-03-22_21-11-52",
+            "content": "@@ -1196,16 +1196,14 @@\n mt.Print\n-ln\n ()%0A%0A%7D%0A\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-03-22_21-12-14",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var totalAlbum, possui int\n    fmt.Scan(&totalAlbum, &possui)\n\n    // Parte 1\n    figurinhas := make([]int, possui)\n    for i := range figurinhas {\n        fmt.Scan(&figurinhas[i])\n    }\n    \n    var repetidas []int\n    for i :=  0; i < len(figurinhas)-1; i++ {\n        if figurinhas[i] == figurinhas[i+1]{\n            repetidas = append(repetidas, figurinhas[i])\n        }\n    }\n\n    if len(repetidas) == 0 {\n        fmt.Print(\"N\")\n    } else {\n        for i := range repetidas {\n            fmt.Print(repetidas[i])\n\n            if i < len(repetidas)-1 {\n                fmt.Print(\" \")\n            }\n        }\n    }\n    fmt.Println() \n\n    // Parte 2\n    album := make([]bool, totalAlbum+1)\n    for _, fig := range figurinhas {\n        album[fig] = true\n    }\n\n    var faltantes []int\n    for i := 1; i <= totalAlbum; i++ {\n        if !album[i] {\n            faltantes = append(faltantes, i)\n        }\n    }\n\n    if len(faltantes) == 0 {\n        fmt.Print(\"N\")\n    } else {\n        for i := range faltantes {\n            fmt.Print(faltantes[i])\n\n            if i < len(faltantes)-1 {\n                fmt.Print(\" \")\n            }\n        }\n    }\n    fmt.Println()\n\n}\n",
+            "lines": "59"
+        }
+    ]
+}
